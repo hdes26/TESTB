@@ -1,0 +1,17 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "wompi",
+    "password": "wompi",
+    "database": "postgres",
+    "entities": [
+      "./src/common/database/core/entities/**/*.entity{.ts, .js}",
+      "./src/common/database/core/entities/**/**/*.entity{.ts, .js}"
+    ],
+    "migrationsTableName": "migrations",
+    "migrations": ["./migrations/*.{js,ts}"],
+    "cli": {
+      "migrationsDir": "migrations"
+    }
+  }
